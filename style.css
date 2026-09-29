@@ -688,3 +688,59 @@ footer {
         height: 250px;
     }
 }
+
+/* BuskyRash Farm Videos */
+#farm-videos {
+    text-align: center;
+    background: #f7f7f7;
+}
+
+#farm-videos > p {
+    max-width: 800px;
+    margin: 0 auto 35px;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.farm-video-grid {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.farm-video-grid figure {
+    margin: 0;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    border-bottom: 4px solid #f2b705;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.farm-video-grid video {
+    display: block;
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    background: #000;
+}
+
+.farm-video-grid figcaption {
+    padding: 15px;
+    color: #173f2a;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+@media (max-width: 750px) {
+    .farm-video-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .farm-video-grid video {
+        height: auto;
+        max-height: 520px;
+    }
+}
